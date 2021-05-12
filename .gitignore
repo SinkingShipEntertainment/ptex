@@ -6,3 +6,6 @@
 *.so
 *.a
 *.slo
+
+_rez_build
+.vscode
