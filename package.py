@@ -46,4 +46,4 @@ def pre_build_commands():
 def commands():
     env.PTEX_ROOT = "{root}"
     env.PTEX_LOCATION = "{root}"
-    env.LD_LIBRARY_PATH.append("{root}/lib64")
+    #env.LD_LIBRARY_PATH.append("{root}/lib64")
