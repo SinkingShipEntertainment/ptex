@@ -23,10 +23,10 @@ if(MSVC)
     add_definitions(
 
         #warning C4800: 'BOOL': forcing value to bool 'true' or 'false' (performance warning)
-        /wd4800 
+        /wd4800
 
         #warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-        /wd4244 
+        /wd4244
 
         /D_CRT_SECURE_NO_WARNINGS
     )
@@ -43,3 +43,11 @@ add_subdirectory(src/ptex)
 add_subdirectory(src/utils)
 add_subdirectory(src/tests)
 add_subdirectory(src/doc)
+
+
+# REZ
+include(RezBuild)
+rez_install_files(
+    cmake/FindPTex.cmake
+    DESTINATION .
+)
