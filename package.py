@@ -30,8 +30,6 @@ requires = [
 ]
 
 private_build_requires = [
-    "cmake",
-    "gcc",
 ]
 
 variants = [
@@ -41,6 +39,9 @@ variants = [
 build_system = "cmake"
 
 uuid = "repository.ptex"
+
+def pre_build_commands():
+    command("source /opt/rh/devtoolset-6/enable")
 
 def commands():
     env.PTEX_ROOT = "{root}"
