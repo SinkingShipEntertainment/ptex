@@ -1,6 +1,6 @@
 name = "ptex"
 
-version = "2.1.28"
+version = "2.1.33"
 
 authors = [
     "WDAS"
@@ -46,7 +46,3 @@ def pre_build_commands():
 def commands():
     env.PTEX_ROOT = "{root}"
     env.PTEX_LOCATION = "{root}"
-    #env.LD_LIBRARY_PATH.append("{root}/lib64")
-
-    if building:
-        env.CMAKE_MODULE_PATH.append("{root}/cmake")
