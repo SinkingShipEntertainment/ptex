@@ -103,11 +103,3 @@ add_subdirectory(src/utils)
 add_subdirectory(src/tests)
 add_subdirectory(src/doc)
 add_subdirectory(src/build)
-
-
-# REZ
-include(RezBuild)
-rez_install_files(
-    cmake/FindPTex.cmake
-    DESTINATION .
-)

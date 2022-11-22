@@ -1,6 +1,6 @@
 name = "ptex"
 
-version = "2.1.33"
+version = "2.3.2"
 
 authors = [
     "WDAS"
